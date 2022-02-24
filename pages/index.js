@@ -34,7 +34,7 @@ export default function Home({ costs }) {
 // }
 
 export async function getServerSideProps() {
-  const data = await fetch("http://localhost:3000/api/costs")
+  const data = await fetch("/api/costs")
     .then(async (res) => {
       const data = await res.json();
       if (data && data.message && data.message === "Not found") {

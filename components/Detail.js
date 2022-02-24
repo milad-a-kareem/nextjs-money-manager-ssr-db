@@ -16,7 +16,7 @@ function Detail({ detail }) {
   };
   const onDelete = () => {
     setIsLoading(true);
-    fetch(`http://localhost:3000/api/${detail._id}`, { method: "DELETE" })
+    fetch(`/api/${detail._id}`, { method: "DELETE" })
       .then((r) => {
         setIsLoading(false);
         router.push("/");
@@ -27,7 +27,7 @@ function Detail({ detail }) {
   };
   const onSave = () => {
     setIsLoading(true);
-    fetch(`http://localhost:3000/api/${detail._id}`, {
+    fetch(`/api/${detail._id}`, {
       method: "POST",
       body: JSON.stringify({ title, costAmount, date }),
     })

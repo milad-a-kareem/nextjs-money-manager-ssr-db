@@ -11,7 +11,7 @@ const initialState = {
 };
 
 export const addCost = createAsyncThunk("costs/addCost", async (costData) => {
-  const response = await fetch(`http://localhost:3000/api/costs`, {
+  const response = await fetch(`/api/costs`, {
     method: "POST",
     body: JSON.stringify(costData),
   });

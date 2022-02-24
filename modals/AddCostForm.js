@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addCost, costsActions } from "../store/costs-slice";
+import { addCost } from "../store/costs-slice";
 
 import { toggle } from "../store/form-modal-slice";
 
