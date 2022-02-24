@@ -16,7 +16,7 @@ function Detail({ detail }) {
   };
   const onDelete = () => {
     setIsLoading(true);
-    fetch(`/api/${detail._id}`, { method: "DELETE" })
+    fetch(`https://nextjs-money-manager-ssr-db.vercel.app/api/${detail._id}`, { method: "DELETE" })
       .then((r) => {
         setIsLoading(false);
         router.push("/");
@@ -27,7 +27,7 @@ function Detail({ detail }) {
   };
   const onSave = () => {
     setIsLoading(true);
-    fetch(`/api/${detail._id}`, {
+    fetch(`https://nextjs-money-manager-ssr-db.vercel.app/api/${detail._id}`, {
       method: "POST",
       body: JSON.stringify({ title, costAmount, date }),
     })
