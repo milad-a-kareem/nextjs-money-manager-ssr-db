@@ -52,7 +52,7 @@ function Detail({ detail }) {
   const inputClass = ` w-full p-4 rounded-xl my-3 disabled:bg-white/50 bg-white/80`;
   return (
     <div className="h-full w-full  flex justify-center items-center">
-      <div className="rounded-xl bg-light  w-[60%] flex flex-col p-3">
+      <div className="rounded-xl bg-light w-[90%]  lg:w-[60%] flex flex-col p-3">
         <input
           type="text"
           value={title}
